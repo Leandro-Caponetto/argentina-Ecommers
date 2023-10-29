@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
 
 const cartItems =useSelector(state=> state.cart.cartItems);
-
+  console.log(cartItems)
 const totalAmount = useSelector(state=> state.cart.totalAmount);
 
 
@@ -88,7 +88,7 @@ const Tr = ({item})=>{
   const deleteProduct = ()=>{
     dispatch(cartActions.deleteItem(item.id))
   }
-
+ 
   return <tr >
   <td><img src={item.imgUrl} alt={item.productName} /></td>
   <td>{item.productName}</td>

@@ -47,3 +47,35 @@
         font-size: 0.9rem;
     }
 }
+
+
+
+.banner {
+    position: relative;
+    bottom: 0; /* Cambiamos la posición a la parte inferior */
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--card-bg-01);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .banner-text {
+    display: inline-block;
+    animation: scrollText 35s linear infinite;
+    transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(320%);
+    }
+    100% {
+      transform: translateX(-320%); /* Mover el texto a la izquierda */
+    }
+  }
+  

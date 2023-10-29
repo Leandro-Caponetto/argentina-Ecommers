@@ -14,6 +14,7 @@ import useAuth from '../../custom-hooks/useAuth';
 import { Link } from 'react-router-dom'
 
 
+
 const nav__links = [
   {
     path: 'home',
@@ -67,6 +68,7 @@ const Header = () => {
     <Container>
       <Row>
         <div className="nav__wrapper">
+       
           <div className="logo">
             <img src={logo} alt="logo" />
             <div>
@@ -138,6 +140,7 @@ const Header = () => {
         </div>
       </Row>
     </Container>
+    
   </header>
 }
 

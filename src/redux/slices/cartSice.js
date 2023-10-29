@@ -19,19 +19,17 @@ const cartSice = createSlice({
 
         state.totalQuantity++   
         
-        if(!existingItem){
+        if (!existingItem) {
             state.cartItems.push({
-                id: newItem.id,
-                productName: newItem.productName,
-                imgUrl: newItem.imgUrl,
-                price: newItem.price,
-                quantity: 1,
-                totalPrice: newItem.price
-
-            })
-        }
-
-        else{
+              id: newItem.id,
+              productName: newItem.productName,
+              imgUrl: Array.isArray(newItem.imgUrl) ? [...newItem.imgUrl] : [newItem.imgUrl],
+              price: newItem.price,
+              quantity: 1,
+              totalPrice: newItem.price,
+            });
+          
+        }else{
             existingItem.quantity++
             existingItem.totalPrice = Number(existingItem.totalPrice) + Number(newItem.price)
         }
@@ -39,7 +37,7 @@ const cartSice = createSlice({
         state.totalAmount = state.cartItems.reduce((total, item)=> total+
         Number(item.price) * Number(item.quantity),0
         );
-
+        console.log(state.cartItems)
     },
 
     deleteItem:(state, action)=>{

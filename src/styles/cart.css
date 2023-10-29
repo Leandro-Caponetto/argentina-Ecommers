@@ -12,3 +12,39 @@ td,
 th{
     color: var(--primary-color);
 }
+
+/* Estilos para el contenedor del paginado */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los botones de paginación */
+  .pagination button {
+    background-color:var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón activo */
+  .pagination button.active {
+    background-color: var(--card-bg-02);
+    color: var(--primary-color);
+  }
+  
+  /* Estilos para el botón "Previous" */
+  .pagination .prev {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón "Next" */
+  .pagination .next {
+    margin-left: 10px;
+  }
+  

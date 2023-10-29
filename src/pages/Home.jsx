@@ -8,14 +8,14 @@ import Helmet from "../components/Helmet/Helmet";
 import '../styles/home.css';
 
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from '../assets/images/hero-img.png'
+import heroImg from '../assets/images/zapatos/zapato1/zapato1.1.png'
 
 import Services from '../services/Services';
 import ProductsList from '../components/Ui/ProductsList';
 
 import Clock from '../components/Ui/Clock';
 
-import counterImg from '../assets/images/counter-timer-img.png'
+import counterImg from '../assets/images/zapatos/cartera2/cartera2.1.png'
 
 
 const Home = () => {
@@ -107,8 +107,8 @@ const Home = () => {
               <Col lg='6' md='12' className='count__down-col'>
 
               <div className="clock__top-content">
-                <h4 className='text-white fs-6 md-2'>Limeted offers</h4>
-                <h3 className='text-white fs-5 md-3'>Quality Armchair</h3>
+                <h4 className='text-white fs-6 md-2'>Descuentos exclusivos</h4>
+                <h3 className='text-white fs-5 md-3'>En todas las carteras</h3>
               </div>
                 <Clock/>
 

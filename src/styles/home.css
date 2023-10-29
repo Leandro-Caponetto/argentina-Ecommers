@@ -44,8 +44,9 @@
 }
 
 .timer__count img{
-    width: 70% !important;
-    height: 70% !important;
+    width: 50% !important;
+    height: 55% !important;
+    
     object-fit: contain;
 }
 

@@ -73,6 +73,13 @@ const Shop = () => {
   <Helmet title='Shop'>
     
     <CommonSection title='Productos'/>
+    <Col>
+        <div className="banner">
+          <div className="banner-text">
+           Descuentos de Navidad en todos los productos. ¡Aproveche!
+          </div>
+        </div>
+      </Col>
 
 
     <section>
