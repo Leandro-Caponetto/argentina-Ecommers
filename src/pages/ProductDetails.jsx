@@ -198,14 +198,14 @@ const ProductDetails = () => {
                           <span className="sr-only"></span>
                         </a>
                       </Col> */}
-                          <Col lg={10}>
+                          <Col lg={12}>
                             <Carousel
                               id="multi-item-example"
                               className=""
                               controls={false}
                             >
                               <Carousel.Item>
-                                <Row className="m-5 tarjeta " key={id}>
+                                <Row className=" tarjeta " key={id}>
                                   {imgUrl.map((img, index) => (
                                     <Col className="card " key={index} xs={3}>
                                       <a onClick={() => changeImage(index)}>
