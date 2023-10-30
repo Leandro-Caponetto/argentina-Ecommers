@@ -159,7 +159,7 @@
     .gorro-navidad {
         position: absolute;
         width: 30px; /* Ajusta el ancho según tus necesidades */
-        top: 192%; /* Ajusta la posición vertical según tus necesidades */
+        top: 170%; /* Ajusta la posición vertical según tus necesidades */
         left: 7%; /* Ajusta la posición horizontal según tus necesidades */
         transform: translate(-50%, -50%); /* Centra la imagen con respecto a su posición */
       }

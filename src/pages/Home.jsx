@@ -27,22 +27,25 @@ const Home = () => {
   const [movileProducts, setMovileProducts] = useState([])
   const [wirelessProducts, setWirelessProducts] = useState([])
   const [popularProducts, setPopularProducts] = useState([])
+  const [unicProducts, setUnicProducts] = useState([])
   
   
   const year = new Date().getFullYear()
 
 
   useEffect(()=>{
-    const filteredtrendingProducts = products.filter(itme=> itme.category ==='chair'
+    const filteredtrendingProducts = products.filter(itme=> itme.category ==='bota'
     );
-    const filteredBestSalesProducts = products.filter(itme=> itme.category ==='sofa'
+    const filteredBestSalesProducts = products.filter(itme=> itme.category ==='zapato'
     );
 
-    const filteredMobileProducts = products.filter(itme=> itme.category ==='mobile'
+    const filteredMobileProducts = products.filter(itme=> itme.category ==='zapatilla'
     );
-    const filteredWirelessProducts = products.filter(itme=> itme.category ==='wireless'
+    const filteredWirelessProducts = products.filter(itme=> itme.category ==='sandalia'
     );
-    const filteredPopularProducts = products.filter(itme=> itme.category ==='watch'
+    const filteredPopularProducts = products.filter(itme=> itme.category ==='cartera'
+    );
+    const filteredUnicProducts = products.filter(itme=> itme.category ==='borcego'
     );
     
 
@@ -53,6 +56,7 @@ const Home = () => {
     setMovileProducts(filteredMobileProducts);
     setWirelessProducts(filteredWirelessProducts);
     setPopularProducts(filteredPopularProducts);
+    setUnicProducts(filteredUnicProducts);
   },[]);
 
   return (
@@ -144,6 +148,17 @@ const Home = () => {
                 <h2 className='section__title'>Popular in Category</h2>
               </Col>
               <ProductsList data={popularProducts}/>
+              
+          </Row>
+        </Container>
+      </section>
+      <section className="popular__category">
+      <Container>
+          <Row>
+          <Col lg='12' className='text-center mb-5'>
+                <h2 className='section__title'>Popular in Category</h2>
+              </Col>
+              <ProductsList data={unicProducts}/>
               
           </Row>
         </Container>
