@@ -17,39 +17,46 @@ const Shop = () => {
   const handleFilter = (e) => {
 
     const filterValue = e.target.value;
-    if(filterValue === 'sofa'){
+    if(filterValue === 'bota'){
       const filteredProducts = products.filter(
-        (item) => item.category === 'sofa');
+        (item) => item.category === 'bota');
 
       setPruductsData(filteredProducts);
 
     }
 
-    if(filterValue === 'mobile'){
+    if(filterValue === 'zapato'){
       const filteredProducts = products.filter(
-        (item) => item.category === 'mobile');
+        (item) => item.category === 'zapato');
 
       setPruductsData(filteredProducts);
 
     }
 
-    if(filterValue === 'chair'){
+    if(filterValue === 'zapatilla'){
       const filteredProducts = products.filter(
-        (item) => item.category === 'chair');
+        (item) => item.category === 'zapatilla');
 
       setPruductsData(filteredProducts);
 
     }
-    if(filterValue === 'watch'){
+    if(filterValue === 'sandalia'){
       const filteredProducts = products.filter(
-        (item) => item.category === 'watch');
+        (item) => item.category === 'sandalia');
 
       setPruductsData(filteredProducts);
 
     }
-    if(filterValue === 'wireless'){
+    if(filterValue === 'cartera'){
       const filteredProducts = products.filter(
-        (item) => item.category === 'wireless');
+        (item) => item.category === 'cartera');
+
+      setPruductsData(filteredProducts);
+
+    }
+    if(filterValue === 'borcego'){
+      const filteredProducts = products.filter(
+        (item) => item.category === 'borcego');
 
       setPruductsData(filteredProducts);
 
@@ -76,7 +83,7 @@ const Shop = () => {
     <Col>
         <div className="banner">
           <div className="banner-text">
-           Descuentos de Navidad en todos los productos. ¡Aproveche!
+           <img src="https://www.gifsanimados.org/data/media/359/santa-claus-y-papa-noel-imagen-animada-0420.gif" alt="" /> Descuentos de Navidad en todos los productos. ¡Aproveche!
           </div>
         </div>
       </Col>
@@ -89,11 +96,12 @@ const Shop = () => {
             <div className="filter__widget">
               <select onChange={handleFilter}>
               <option >filter By Category</option>
-                <option value="sofa">Sofa</option>
-                <option value="mobile">Mobile</option>
-                <option value="chair">Chair</option>
-                <option value="watch">Watch</option>
-                <option value="wireless">Wireless</option>
+                <option value="bota">Botas</option>
+                <option value="zapato">Zapatos</option>
+                <option value="zapatilla">Zapatillas</option>
+                <option value="sandalia">Sandalias</option>
+                <option value="cartera">Carteras</option>
+                <option value="borcego">Borcegos</option>
               </select>
             </div>
           </Col>

@@ -131,6 +131,20 @@
     animation: scrollText 35s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
+  .banner-text img{
+    height: 20px;
+    
+    width: 100px;
+  }
+  .gorro-navidad {
+    position: absolute;
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    top: 88%; /* Ajusta la posición vertical según tus necesidades */
+    left: 52%; /* Ajusta la posición horizontal según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra la imagen con respecto a su posición */
+  }
+  
+  
   
   @keyframes scrollText {
     0% {
@@ -141,3 +155,12 @@
     }
   }
   
+@media only screen and (max-width:768px){
+    .gorro-navidad {
+        position: absolute;
+        width: 30px; /* Ajusta el ancho según tus necesidades */
+        top: 192%; /* Ajusta la posición vertical según tus necesidades */
+        left: 7%; /* Ajusta la posición horizontal según tus necesidades */
+        transform: translate(-50%, -50%); /* Centra la imagen con respecto a su posición */
+      }
+}

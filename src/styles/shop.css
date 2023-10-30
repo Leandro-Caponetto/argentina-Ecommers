@@ -69,6 +69,11 @@
     animation: scrollText 35s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
+  .banner-text img{
+    height: 20px;
+    
+    width: 100px;
+  }
   
   @keyframes scrollText {
     0% {

@@ -192,10 +192,10 @@ import productImgCart121 from "../../assets/images/zapatos/cartera12/cartera12.2
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "47 street ",
     imgUrl: [productImg2p, productImg2s, productImg2t],
-    category: "sofa",
-    price: 193,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -211,10 +211,10 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Ricky Sarckany",
     imgUrl: [productImg3p, productImg3s, productImg3t],
-    category: "sofa",
-    price: 253,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -234,10 +234,10 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "47 street",
     imgUrl: [productImg4p, productImg4s, productImg4t],
-    category: "sofa",
-    price: 173,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -256,14 +256,14 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "47 street ",
     imgUrl: [
         productImg5p,
         productImg5s,
         productImg5t,
     ],
-    category: "sofa",
-    price: 253,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -282,14 +282,14 @@ const products = [
   },
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Forever 21",
     imgUrl:[
       productImg6p,
       productImg6s,
       productImg6t,
   ],
-    category: "sofa",
-    price: 163,
+    category: "bota",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -309,14 +309,14 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "Paruolo",
     imgUrl: [
       productImg7p,
       productImg7s,
       productImg7t,
   ],
-    category: "sofa",
-    price: 163,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -336,14 +336,14 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Zara",
     imgUrl: [
       productImg8p,
       productImg8s,
       productImg8t,
   ],
-    category: "sofa",
-    price: 163,
+    category: "zapato",
+    price: 25000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -362,14 +362,14 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "47 Street",
     imgUrl: [
       productImg9p,
       productImg9s,
       productImg9t,
   ],
-    category: "chair",
-    price: 99,
+    category: "sandalia",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -389,14 +389,14 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
+    productName: "Prune",
     imgUrl:  [
       productImg10p,
       productImg10s,
       productImg10t,
   ],
-    category: "sofa",
-    price: 173,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -416,14 +416,14 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "Zara",
     imgUrl:  [
       productImg11p,
       productImg11s,
       productImg11t,
   ],
-    category: "chair",
-    price: 89,
+    category: "zapatilla",
+    price: 35000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -443,14 +443,14 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "Adidas",
     imgUrl:[
       productImg12p,
       productImg12s,
       productImg12t,
   ],
-    category: "chair",
-    price: 112,
+    category: "zapatilla",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -470,14 +470,14 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
+    productName: "Adidas",
     imgUrl: [
       productImg13p,
       productImg13s,
       productImg13t,
   ],
-    category: "mobile",
-    price: 799,
+    category: "zapatilla",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -494,42 +494,17 @@ const products = [
     ],
     avgRating: 4.8,
   },
-  {
-    id: "25",
-    productName: "Sakarias Armchair",
-    imgUrl:[
-      productImg14p,
-      productImg14s,
-      productImg14t,
-  ],
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "Justa Osadia",
     imgUrl: [
       productImg15p,
       productImg15s,
       productImg15t,
   ],
-    category: "mobile",
-    price: 799,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -549,14 +524,14 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
+    productName: "Hush Puppies",
     imgUrl:[
       productImg16p,
       productImg16s,
       productImg16t,
   ],
-    category: "mobile",
-    price: 599,
+    category: "sandalia",
+    price: 9000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -576,14 +551,14 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
+    productName: "Ricky Sarkany",
     imgUrl: [
       productImg17p,
       productImg17s,
       productImg17t,
   ],
-    category: "mobile",
-    price: 799,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -603,14 +578,14 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
+    productName: "Hush Puppies",
     imgUrl: [
       productImg18p,
       productImg18s,
       productImg18t,
   ],
-    category: "mobile",
-    price: 899,
+    category: "bota",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -630,14 +605,14 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
+    productName: "Aldo",
     imgUrl: [
       productImg19p,
       productImg19s,
       productImg19t,
   ],
-    category: "mobile",
-    price: 699,
+    category: "bota",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -657,14 +632,14 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Foster",
     imgUrl:[
       productImg20p,
       productImg20s,
       productImg20t,
   ],
-    category: "watch",
-    price: 299,
+    category: "bota",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -684,14 +659,14 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Ricky Sarkany",
     imgUrl: [
       productImg24p,
       productImg24s,
       productImg24t,
   ],
-    category: "watch",
-    price: 299,
+    category: "borcego",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -711,14 +686,14 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Hush Puppies",
     imgUrl: [
       productImg21p,
       productImg21s,
       productImg21t,
   ],
-    category: "watch",
-    price: 299,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -738,14 +713,14 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Justo Osadia",
     imgUrl: [
       productImg22p,
       productImg22s,
       productImg22t,
   ],
-    category: "watch",
-    price: 399,
+    category: "bota",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -765,14 +740,14 @@ const products = [
 
   {
     id: "20",
-    productName: "Beat Studio Wireless",
+    productName: "Ricky Sarkany",
     imgUrl:[
       productImg23p,
       productImg23s,
       productImg23t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "sandalia",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -792,14 +767,14 @@ const products = [
 
   {
     id: "21",
-    productName: "Beat EP Headphones",
+    productName: "Nike",
     imgUrl: [
       productImg25p,
       productImg25s,
       productImg25t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "zapatilla",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -818,14 +793,14 @@ const products = [
   },
   {
     id: "22",
-    productName: "Beat EP Headphones",
+    productName: "XL",
     imgUrl: [
       productImg26p,
       productImg26s,
       productImg26t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "zapato",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -844,14 +819,14 @@ const products = [
   },
   {
     id: "23",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImg27p,
       productImg27s,
       productImg27t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "bota",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -870,14 +845,14 @@ const products = [
   },
   {
     id: "24",
-    productName: "Beat EP Headphones",
+    productName: "Forver 21",
     imgUrl: [
       productImg28p,
       productImg28s,
       productImg28t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "bota",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -896,14 +871,14 @@ const products = [
   },
   {
     id: "28",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImg29p,
       productImg29s,
       productImg29t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "bota",
+    price: 20000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -922,14 +897,14 @@ const products = [
   },
   {
     id: "33",
-    productName: "Beat EP Headphones",
+    productName: "Adidas",
     imgUrl: [
       productImg30p,
       productImg30s,
       productImg30t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "zapatilla",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -948,14 +923,14 @@ const products = [
   },
   {
     id: "34",
-    productName: "Beat EP Headphones",
+    productName: "Hush Puppies",
     imgUrl: [
       productImg31p,
       productImg31s,
       productImg31t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -974,14 +949,14 @@ const products = [
   },
   {
     id: "35",
-    productName: "Beat EP Headphones",
+    productName: "Hush Puppies",
     imgUrl: [
       productImg32p,
       productImg32s,
       productImg32t,
   ],
-    category: "wireless",
-    price: 199,
+    category: "zapato",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1000,14 +975,14 @@ const products = [
   },
   {
     id: "29",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart1,
       productImgCart11,
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 18000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1026,15 +1001,15 @@ const products = [
   },
   {
     id: "30",
-    productName: "Beat EP Headphones",
+    productName: "LV",
     imgUrl: [
       productImgCart2,
       productImgCart21,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1053,15 +1028,15 @@ const products = [
   },
   {
     id: "31",
-    productName: "Beat EP Headphones",
+    productName: "LV",
     imgUrl: [
       productImgCart3,
       productImgCart3,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1080,15 +1055,15 @@ const products = [
   },
   {
     id: "32",
-    productName: "Beat EP Headphones",
+    productName: "Husto Osadia",
     imgUrl: [
       productImgCart4,
       productImgCart4,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1107,15 +1082,15 @@ const products = [
   },
   {
     id: "36",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart5,
       productImgCart5,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1134,15 +1109,15 @@ const products = [
   },
   {
     id: "37",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart6,
       productImgCart61,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1161,15 +1136,15 @@ const products = [
   },
   {
     id: "38",
-    productName: "Beat EP Headphones",
+    productName: "47 Street",
     imgUrl: [
       productImgCart7,
       productImgCart71,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1188,15 +1163,15 @@ const products = [
   },
   {
     id: "39",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart8,
       productImgCart81,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1215,15 +1190,15 @@ const products = [
   },
   {
     id: "40",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart9,
       productImgCart91,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1242,15 +1217,15 @@ const products = [
   },
   {
     id: "41",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart10,
       productImgCart101,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1269,15 +1244,15 @@ const products = [
   },
   {
     id: "42",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart11p,
       productImgCart111,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -1296,15 +1271,15 @@ const products = [
   },
   {
     id: "43",
-    productName: "Beat EP Headphones",
+    productName: "Prune",
     imgUrl: [
       productImgCart12p,
       productImgCart121,
       
      
   ],
-    category: "wireless",
-    price: 199,
+    category: "cartera",
+    price: 10000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:

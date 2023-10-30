@@ -1,4 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/**
+ * eslint-disable jsx-a11y/anchor-is-valid
+ *
+ * @format
+ */
+
 /**
  * eslint-disable jsx-a11y/anchor-is-valid
  *
@@ -115,7 +120,11 @@ const ProductDetails = () => {
       <Col>
         <div className="banner">
           <div className="banner-text">
-             Descuentos de Navidad en todos los productos. ¡Aproveche!
+            <img
+              src="https://www.gifsanimados.org/data/media/359/santa-claus-y-papa-noel-imagen-animada-0420.gif"
+              alt=""
+            />{" "}
+            Descuentos de Navidad en todos los productos. ¡Aproveche!
           </div>
         </div>
       </Col>
@@ -159,13 +168,21 @@ const ProductDetails = () => {
                 </div>
                 <p className="mt-3">{shortDesc}</p>
 
-                <motion.button
-                  whileTap={{ scale: 1.2 }}
-                  className="buy__btn"
-                  onClick={addToCart}
-                >
-                  Add to Cart
-                </motion.button>
+                <div className="product__card-bottom d-flex align-items-center justify-content-between p-2">
+                  <motion.button
+                    whileTap={{ scale: 1.2 }}
+                    className="buy__btn"
+                    onClick={addToCart}
+                  >
+                    Add to Cart
+                  </motion.button>
+                  <img
+                    src="https://img1.picmix.com/output/stamp/normal/4/4/5/8/1748544_97708.gif"
+                    alt="Gorro de Navidad"
+                    className="gorro-navidad"
+                  />
+                </div>
+
                 <Col>
                   <Container className="bg-light contenedor ">
                     <Row>
