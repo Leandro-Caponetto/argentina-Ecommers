@@ -56,9 +56,9 @@ import productImg13s from "../../assets/images/zapatos/zapato13/zapato13.2.png";
 import productImg13t from "../../assets/images/zapatos/zapato13/zapato13.3.png";
 
 
-import productImg14p from "../../assets/images/zapatos/zapato14/zapato14.1.png";
-import productImg14s from "../../assets/images/zapatos/zapato14/zapato14.2.png";
-import productImg14t from "../../assets/images/zapatos/zapato14/zapato14.3.png";
+// import productImg14p from "../../assets/images/zapatos/zapato14/zapato14.1.png";
+// import productImg14s from "../../assets/images/zapatos/zapato14/zapato14.2.png";
+// import productImg14t from "../../assets/images/zapatos/zapato14/zapato14.3.png";
 
 
 import productImg15p from "../../assets/images/zapatos/zapato15/zapato15.1.png";

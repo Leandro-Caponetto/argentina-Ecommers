@@ -352,6 +352,13 @@ const ProductDetails = () => {
           </Row>
         </Container>
       </section>
+      <section>
+        <Row>
+          <Col>
+            <ProductCarousel />
+          </Col>
+        </Row>
+      </section>
     </Helmet>
   );
 };
