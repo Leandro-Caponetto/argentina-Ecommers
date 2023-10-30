@@ -101,7 +101,7 @@ const ProductDetails = () => {
     dispatch(
       cartActions.addItem({
         id,
-        Image: imgUrl,
+        Image: imgUrl[0],
         productName,
         price,
       })

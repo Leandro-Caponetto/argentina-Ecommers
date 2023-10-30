@@ -1,146 +1,150 @@
-import React, {useRef, useEffect} from 'react'
+/** @format */
 
-import { NavLink, useNavigate } from 'react-router-dom'
-import './header.css'
+import React, { useRef, useEffect } from "react";
 
-import { motion } from 'framer-motion'
+import { NavLink, useNavigate } from "react-router-dom";
+import "./header.css";
 
-import logo from '../../assets/images/eco-logo.png'
-import userIcon from '../../assets/images/user-icon.png'
+import { motion } from "framer-motion";
 
-import { Container, Row} from "reactstrap"
-import { useSelector } from 'react-redux'
-import useAuth from '../../custom-hooks/useAuth';
-import { Link } from 'react-router-dom'
+import logo from "../../assets/images/eco-logo.png";
+import userIcon from "../../assets/images/user-icon.png";
 
-
+import { Container, Row } from "reactstrap";
+import { useSelector } from "react-redux";
+import useAuth from "../../custom-hooks/useAuth";
+import { Link } from "react-router-dom";
 
 const nav__links = [
   {
-    path: 'home',
-    display: 'Home'
+    path: "home",
+    display: "Home",
   },
   {
-    path: 'shop',
-    display: 'Shop'
+    path: "shop",
+    display: "Shop",
   },
   {
-    path: 'cart',
-    display: 'Cart'
+    path: "cart",
+    display: "Cart",
   },
-]
+];
 const Header = () => {
-
   const headerRef = useRef(null);
-  const totalQuantity = useSelector(state=> state.cart.totalQuantity);
-  const profileActionRef = useRef(null)
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const profileActionRef = useRef(null);
 
   const menuRef = useRef(null);
   const navigate = useNavigate();
-  const {currentUser} = useAuth()
+  const { currentUser } = useAuth();
 
-  const stickyHeaderFunc = ()=>{
-    window.addEventListener('scroll', ()=>{
-      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
-        headerRef.current.classList.add('sticky__header')
-      }else{
-        headerRef.current.classList.remove('sticky__header')
+  const stickyHeaderFunc = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
       }
-    })
-  }
+    });
+  };
 
-  useEffect(()=>{
-    stickyHeaderFunc()
-    return ()=> window.removeEventListener('scroll', stickyHeaderFunc);
+  useEffect(() => {
+    stickyHeaderFunc();
+    return () => window.removeEventListener("scroll", stickyHeaderFunc);
   });
 
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
-  const menuToggle = ()=> menuRef.current.classList.toggle('active__menu');
+  const navigateToCart = () => {
+    navigate("/cart");
+  };
 
-  const navigateToCart =()=> {
-      navigate('/cart');
-  }
+  const toggleProfileActions = () =>
+    profileActionRef.current.classList.toggle("show__profileActions");
 
-  const toggleProfileActions = ()=> profileActionRef.current.classList.toggle('show__profileActions')
-
-  return <header className="header" ref={headerRef}>
-    <Container>
-      <Row>
-        <div className="nav__wrapper">
-       
-          <div className="logo">
-            <img src={logo} alt="logo" />
-            <div>
-              <h1>Argentina</h1>
-              
+  return (
+    <header className="header" ref={headerRef}>
+      <Container>
+        <Row>
+          <div className="nav__wrapper">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+              <div>
+                <h1>Argentina</h1>
+              </div>
             </div>
-          </div>
-          <div className="navigation" ref={menuRef} onClick={menuToggle}>
-
-            <motion.ul className="menu">
-              
-            {nav__links.map((item, index)=>(
+            <div className="navigation" ref={menuRef} onClick={menuToggle}>
+              <motion.ul className="menu">
+                {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <NavLink 
-                    to={item.path} 
-                    className={(navClass)=> 
-                      navClass.isActive ? 'nav__active' : ''
-                      } 
-                      >
-                        {item.display}
-                        </NavLink>
+                    <NavLink
+                      to={item.path}
+                      className={(navClass) =>
+                        navClass.isActive ? "nav__active" : ""
+                      }
+                    >
+                      {item.display}
+                    </NavLink>
                   </li>
                 ))}
-            </motion.ul>
-          </div>
+              </motion.ul>
+            </div>
 
             <div className="nav__icons">
-              <span className='fav__icon'>
+              <span className="fav__icon">
                 <i class="ri-heart-line"></i>
-                      <span className="badge">2</span>
+                <span className="badge">2</span>
               </span>
-              <span className='cart__icon' onClick={navigateToCart}>
+              <span className="cart__icon" onClick={navigateToCart}>
                 <i class="ri-shopping-bag-line"></i>
-                  <span className="badge">{totalQuantity}</span>
-                </span>
+                <span className="badge">{totalQuantity}</span>
+              </span>
 
-                <div className='profile'>
-                  <motion.img
-                   whileTap={{scale: 1.2}}  
-                    src={ currentUser ? currentUser.photoURL : userIcon}  
-                    alt="" 
-                    onClick={toggleProfileActions}
-                  />
-
-                    <div 
-                      className="profile__actions" 
-                      ref={profileActionRef}
-                      onClick={toggleProfileActions}
-                    >
-                      {
-                        currentUser ? (
-                          <span>Logout</span> 
-                        ):( 
-                        <div>
-                          <Link to='/signup'>Signup</Link>
-                          <Link to='/login'>Login</Link>
-                        </div>
-                      )}
-                    </div>
+              <div className="profile">
+                <motion.img
+                  whileTap={{ scale: 1.2 }}
+                  src={currentUser ? currentUser.photoURL : userIcon}
                   
+                  alt=""
+                  onClick={toggleProfileActions}
+                  className="userI"
+                />
+
+                <motion.img
+                  whileTap={{ scale: 1.2 }}
+                  src="https://media1.giphy.com/media/dUgTmjL7DxgZHAaDoG/giphy.gif?cid=6c09b952gbwhef3xxho19r6nioupe3bvoddzngmgo74h3hf7&ep=v1_stickers_related&rid=giphy.gif&ct=s"
+                  alt=""
+                  className="gorra"
+                />
+                <div
+                  className="profile__actions"
+                  ref={profileActionRef}
+                  onClick={toggleProfileActions}
+                >
+                  {currentUser ? (
+                    <span>Logout</span>
+                  ) : (
+                    <div>
+                      <Link to="/signup">Signup</Link>
+                      <Link to="/login">Login</Link>
+                    </div>
+                  )}
                 </div>
-                  <div className="mobile__menu">
+              </div>
+              <div className="mobile__menu">
                 <span onClick={menuToggle}>
                   <i class="ri-menu-line"></i>
                 </span>
+              </div>
             </div>
-            </div>
-            
-        </div>
-      </Row>
-    </Container>
-    
-  </header>
-}
+          </div>
+        </Row>
+      </Container>
+    </header>
+  );
+};
 
 export default Header;

@@ -4,6 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
 
     cartItems:[],
+    
     totalAmount:0,
     totalQuantity:0
 }
@@ -19,16 +20,16 @@ const cartSice = createSlice({
 
         state.totalQuantity++   
         
+        
         if (!existingItem) {
             state.cartItems.push({
               id: newItem.id,
               productName: newItem.productName,
-              imgUrl: Array.isArray(newItem.imgUrl) ? [...newItem.imgUrl] : [newItem.imgUrl],
+              imgUrl: newItem.imgUrl, 
               price: newItem.price,
               quantity: 1,
               totalPrice: newItem.price,
             });
-          
         }else{
             existingItem.quantity++
             existingItem.totalPrice = Number(existingItem.totalPrice) + Number(newItem.price)
