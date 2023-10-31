@@ -66,13 +66,13 @@
   
   .banner-text {
     display: inline-block;
-    animation: scrollText 35s linear infinite;
+    animation: scrollText 45s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
   .banner-text img{
     height: 20px;
     
-    width: 100px;
+    width: 80px;
   }
   
   @keyframes scrollText {

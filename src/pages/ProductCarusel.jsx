@@ -16,7 +16,7 @@ import "../styles/product-details.css";
 
 const ProductCarousel = () => {
   return (
-    <Container className="bg-light">
+    <Container className="bg">
       <Row>
         <Col lg={6} className="mt-5 carta">
           {/* <div className="card mb-3">

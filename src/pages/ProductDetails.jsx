@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /**
  * eslint-disable jsx-a11y/anchor-is-valid
  *
@@ -101,7 +102,7 @@ const ProductDetails = () => {
     dispatch(
       cartActions.addItem({
         id,
-        Image: imgUrl[0],
+        Image: imgUrl.url,
         productName,
         price,
       })
@@ -133,7 +134,7 @@ const ProductDetails = () => {
         <Container>
           <Row>
             <Col lg="6">
-              <img src={imgUrl[activeImage]} alt="" width={70} />
+              <img src={imgUrl[activeImage].url} alt="" width={70} />
             </Col>
 
             <Col lg="6">
@@ -176,11 +177,11 @@ const ProductDetails = () => {
                   >
                     Add to Cart
                   </motion.button>
-                  <img
+                  {/* <img
                     src="https://img1.picmix.com/output/stamp/normal/4/4/5/8/1748544_97708.gif"
                     alt="Gorro de Navidad"
                     className="gorro-navidad"
-                  />
+                  /> */}
                 </div>
 
                 <Col>
@@ -211,7 +212,7 @@ const ProductDetails = () => {
                                       <a onClick={() => changeImage(index)}>
                                         <img
                                           className="card-img img-fluid"
-                                          src={img}
+                                          src={img.url}
                                           alt={`Product Image ${index + 1}`}
                                         />
                                       </a>

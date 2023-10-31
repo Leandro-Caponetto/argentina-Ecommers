@@ -132,14 +132,37 @@
   
   .banner-text {
     display: inline-block;
-    animation: scrollText 35s linear infinite;
+    animation: scrollText 45s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
   .banner-text img{
     height: 20px;
     
-    width: 100px;
+    width: 80px;
   }
+  .bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+  .bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-pink-banner-background-womens-clothing-image_10589.jpg");
+    background-size: cover;
+    opacity: 0.7; /* Ajusta la opacidad según lo desees */
+    filter: saturate(0.6); /* Ajusta el valor de saturación del filtro */
+    border-radius: 8px;
+  }
+  
+  
   .gorro-navidad {
     position: absolute;
     width: 30px; /* Ajusta el ancho según tus necesidades */

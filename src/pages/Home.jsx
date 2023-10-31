@@ -163,6 +163,12 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      <div className="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=1128398509">
+        <img src="https://moein.video/wp-content/uploads/2021/12/Whatsapp-Logo-GIF-WhatsApp-Icon-GIF-Royalty-Free-Animated-Icon-GIF-350px-after-effects-project.gif" alt="whatsapp" />
+    </a>
+</div>
+
     </Helmet>
   )
 }
