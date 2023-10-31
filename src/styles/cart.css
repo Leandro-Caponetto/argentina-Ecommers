@@ -48,3 +48,12 @@ th{
     margin-left: 10px;
   }
   
+  .whatsapp {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.whatsapp img{
+    width: 80px;
+}

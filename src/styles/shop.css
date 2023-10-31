@@ -66,7 +66,7 @@
   
   .banner-text {
     display: inline-block;
-    animation: scrollText 45s linear infinite;
+    animation: scrollText 55s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
   .banner-text img{
@@ -74,6 +74,55 @@
     
     width: 80px;
   }
+
+  .whatsapp {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.whatsapp img{
+    width: 80px;
+}
+
+.news-banner {
+  position: fixed;
+  bottom: 0;
+  right: -100%; /* Inicialmente oculto */
+  width: 93%;
+  background-color: var(--hero-bg);
+  color:var(--primary-color);
+ 
+  border-top-left-radius: 30px ;
+  padding: 15px;
+  animation: slide-in 2s forwards; /* Animación de deslizamiento */
+  
+}
+
+.news-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sales-info {
+  font-size: 16px;
+}
+
+@keyframes slide-in {
+  0% {
+      right: -100%; /* Comienza fuera de la pantalla */
+  }
+  100% {
+      right: 0; /* Termina en la posición inicial */
+  }
+}
+
   
   @keyframes scrollText {
     0% {

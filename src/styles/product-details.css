@@ -132,7 +132,7 @@
   
   .banner-text {
     display: inline-block;
-    animation: scrollText 45s linear infinite;
+    animation: scrollText 55s linear infinite;
     transform: translateX(100%); /* Inicialmente, el texto está fuera del banner en la derecha */
   }
   .banner-text img{
@@ -171,6 +171,16 @@
     transform: translate(-50%, -50%); /* Centra la imagen con respecto a su posición */
   }
   
+
+  .whatsapp {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.whatsapp img{
+    width: 80px;
+}
   
   
   @keyframes scrollText {

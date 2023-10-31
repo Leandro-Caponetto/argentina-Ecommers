@@ -64,7 +64,7 @@ const totalAmount = useSelector(state=> state.cart.totalAmount);
               </h6>
               
             </div>
-            <p className='fs-6 mt-2'>taxes and shipping will calculate in checkout</p>
+            <p className='fs-6 mt-2'>Las compras se realizan por WhatSapp</p>
             <div>
               
 
@@ -76,7 +76,14 @@ const totalAmount = useSelector(state=> state.cart.totalAmount);
         </Row>
       </Container>
     </section>
-
+    <div className="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=1128398509">
+          <img
+            src="https://moein.video/wp-content/uploads/2021/12/Whatsapp-Logo-GIF-WhatsApp-Icon-GIF-Royalty-Free-Animated-Icon-GIF-350px-after-effects-project.gif"
+            alt="whatsapp"
+          />
+        </a>
+      </div>
   </Helmet>
   );
 };

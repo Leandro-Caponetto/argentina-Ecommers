@@ -125,7 +125,7 @@ const ProductDetails = () => {
               src="https://www.gifsanimados.org/data/media/359/santa-claus-y-papa-noel-imagen-animada-0420.gif"
               alt=""
             />{" "}
-            Descuentos de Navidad en todos los productos. ¡Aproveche!
+            Descuentos de Navidad en todos los productos. ¡Aproveche!  LAS COMPRAS SE REALIZAN POR WHATSAPP
           </div>
         </div>
       </Col>
@@ -360,6 +360,14 @@ const ProductDetails = () => {
           </Col>
         </Row>
       </section>
+      <div className="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=1128398509">
+          <img
+            src="https://moein.video/wp-content/uploads/2021/12/Whatsapp-Logo-GIF-WhatsApp-Icon-GIF-Royalty-Free-Animated-Icon-GIF-350px-after-effects-project.gif"
+            alt="whatsapp"
+          />
+        </a>
+      </div>
     </Helmet>
   );
 };
