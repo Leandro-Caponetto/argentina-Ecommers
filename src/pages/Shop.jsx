@@ -147,14 +147,15 @@ const Shop = () => {
           />
         </a>
       </div>
-      {/* <div class="news-banner">
+      <div class="news-banner">
+        
         <div class="news-content">
           <span class="brand">TuMarca.com</span>
           <span class="sales-info">
             ¡Gran venta de productos! Hasta un 50% de descuento.
           </span>
         </div>
-      </div> */}
+      </div>
     </Helmet>
   );
 };
